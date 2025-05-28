@@ -49,13 +49,13 @@ async function runCreate() {
 
   console.log("\n✅ New documents created:");
   console.log("\nProduct Added ");
-  console.table([await Product.findOne({ _id: 'cp1' }).lean()]);
+  console.table([await Product.findOne({ _id: 'pr101' }).lean()]);
   console.log("\User Added ");
-  console.table([await User.findOne({ _id: 'cu1' }).lean()]);
+  console.table([await User.findOne({ _id: 'us101' }).lean()]);
   console.log("\Order Added ");
-  console.table([await Order.findOne({ _id: 'co1' }).lean()]);
+  console.table([await Order.findOne({ _id: 'or101' }).lean()]);
   console.log("\Review Added ");
-  console.table([await Review.findOne({ _id: 'cr1' }).lean()]);
+  console.table([await Review.findOne({ _id: 'rw101' }).lean()]);
 }
 
 module.exports = runCreate;

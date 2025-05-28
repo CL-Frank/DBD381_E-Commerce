@@ -5,21 +5,21 @@ async function runRead() {
 
   console.log("\n🔍 [READ] Fetching specific documents by ID...");
 
-  const product = await Product.findOne({ _id: 'cp1' }).lean();
-  const user = await User.findOne({ _id: 'cu1' }).lean();
-  const order = await Order.findOne({ _id: 'co1' }).lean();
-  const review = await Review.findOne({ _id: 'cr1' }).lean();
+  const product = await Product.findOne({ _id: 'pr101' }).lean();
+  const user = await User.findOne({ _id: 'us101' }).lean();
+  const order = await Order.findOne({ _id: 'or101' }).lean();
+  const review = await Review.findOne({ _id: 'rw101' }).lean();
 
-  console.log("\n🧾 Product with ID 'cp1':");
+  console.log("\n🧾 Product with ID 'pr101':");
   console.table([product]);
 
-  console.log("\n👤 User with ID 'cu1':");
+  console.log("\n👤 User with ID 'us101':");
   console.table([user]);
 
-  console.log("\n📦 Order with ID 'co1':");
+  console.log("\n📦 Order with ID 'or101':");
   console.table([order]);
 
-  console.log("\n💬 Review with ID 'cr1':");
+  console.log("\n💬 Review with ID 'rw101':");
   console.table([review]);
 }
 

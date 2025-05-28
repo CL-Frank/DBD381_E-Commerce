@@ -28,7 +28,7 @@ Each of these is implemented as a Mongoose schema and is tested using modular sc
 ## 🗂️ Project Structure
 
 ```
-ecommerce_nosql_project/
+DBD381_E-Commerce/
 ├── .env                      # Environment variables (MongoDB URI, DB name)
 ├── .gitignore                # Ignored files (e.g. node_modules, .env)
 ├── index.js                  # Main entry to run all CRUD tests
