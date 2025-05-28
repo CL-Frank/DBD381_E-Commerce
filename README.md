@@ -19,7 +19,7 @@ Each of these is implemented as a Mongoose schema and is tested using modular sc
 
 ## 👨‍💻 Authors
 
-- **[Your Name]** — Project Developer  
+- **Caydan Frank 578131** — Project Developer  
 - **[Teammate 1]** — Research & Evaluation  
 - **[Teammate 2]** — Testing & Documentation
 
