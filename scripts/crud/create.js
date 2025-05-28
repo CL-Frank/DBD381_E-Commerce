@@ -14,43 +14,47 @@ async function runCreate() {
   console.log("\n✍️ Inserting new Product, User, Order, and Review...");
 
   await Product.create({
-    _id: 'cp1',
-    name: 'Created Mouse',
-    category: 'Test',
-    price: 123,
-    stock: 15,
-    ratings: 5
+    _id: 'pr101',
+    name: 'Logitech MX Master 3',
+    category: 'Electronics',
+    price: 1499.99,
+    stock: 35,
+    ratings: 4.8
   });
 
   await User.create({
-    _id: 'cu1',
-    name: 'Create Tester',
-    email: 'create@test.com',
-    address: '123 Tester Lane',
+    _id: 'us101',
+    name: 'Leah Mokoena',
+    email: 'leah.mokoena@example.com',
+    address: '17 Ridgeway Lane, Johannesburg',
     joinDate: new Date()
   });
 
   await Order.create({
-    _id: 'co1',
-    userId: 'cu1',
+    _id: 'or101',
+    userId: 'us101',
     orderDate: new Date(),
-    products: [{ productId: 'cp1', quantity: 1 }],
+    products: [{ productId: 'pr101', quantity: 1 }],
     status: 'Processing'
   });
 
   await Review.create({
-    _id: 'cr1',
-    productId: 'cp1',
-    userId: 'cu1',
+    _id: 'rw101',
+    productId: 'pr101',
+    userId: 'us101',
     rating: 5,
-    comment: 'Excellent!',
+    comment: 'Excellent mouse — ergonomic and reliable!',
     timestamp: new Date()
   });
 
   console.log("\n✅ New documents created:");
+  console.log("\nProduct Added ");
   console.table([await Product.findOne({ _id: 'cp1' }).lean()]);
+  console.log("\User Added ");
   console.table([await User.findOne({ _id: 'cu1' }).lean()]);
+  console.log("\Order Added ");
   console.table([await Order.findOne({ _id: 'co1' }).lean()]);
+  console.log("\Review Added ");
   console.table([await Review.findOne({ _id: 'cr1' }).lean()]);
 }
 
