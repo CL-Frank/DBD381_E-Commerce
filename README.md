@@ -20,8 +20,8 @@ Each of these is implemented as a Mongoose schema and is tested using modular sc
 ## 👨‍💻 Authors
 
 - **Caydan Frank 578131** — Project Developer  
-- **[Teammate 1]** — Research & Evaluation  
-- **[Teammate 2]** — Testing & Documentation
+- **Charmaine Mkhabela 601395** — Research & Evaluation  
+- **Hermanus Jacobus Bantjes 601427** — Testing & Documentation
 
 ---
 
